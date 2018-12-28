@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kenbinsidlic.standex.MainActivity">
+
+
+    <TextView
+        android:text="Describe"
+        android:id="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/stand_list"
+        android:layout_height="30dp"
+        android:layout_width="200dp"
+        android:layout_alignTop="@+id/standname"
+        android:layout_alignParentEnd="true"
+        android:entries="@array/stand" />
+
+    <ImageView
+        android:layout_width="150dp"
+        app2:srcCompat="@drawable/standatk"
+        android:id="@+id/imageView"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:text="Stand Name"
+        android:gravity="center_vertical|left"
+        android:id="@+id/standname"
+        android:textColor="@android:color/black"
+        android:layout_height="30dp"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:text="Stand Master"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/standmaster"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/standname"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="--unselect--"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/stand_list"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/standmaster"
+        android:layout_toStartOf="@+id/imageView" />
+
+</RelativeLayout>
